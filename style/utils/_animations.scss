@@ -62,7 +62,7 @@
     }
 
     to {
-        left: calc(100% + f.rem(300));
+        left: calc(100% + f.rem(700));
     }
 }
 
@@ -72,7 +72,7 @@
 
 @keyframes image-slide-left-inside {
     from {
-        left: calc(100% + f.rem(300));
+        left: calc(100% + f.rem(700));
     }
 
     to {

@@ -34,6 +34,7 @@ body {
     background-repeat: no-repeat;
     background-position: 0% 100%;
     background-size: 80% 8%;
+    max-width: u.rem(1440);
 
     @include u.breakpoint-down(medium) {
         font-size: u.rem(18);
