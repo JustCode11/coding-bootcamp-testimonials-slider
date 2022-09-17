@@ -34,7 +34,7 @@ Mobile Preview
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonials-slider-with-animation-gimmicks-RFCkg6NgIM](https://www.frontendmentor.io/solutions/testimonials-slider-with-animation-gimmicks-RFCkg6NgIM)
 - Live Site URL: [https://justcode11.github.io/coding-bootcamp-testimonials-slider/](https://justcode11.github.io/coding-bootcamp-testimonials-slider/)
 
 ## My process
