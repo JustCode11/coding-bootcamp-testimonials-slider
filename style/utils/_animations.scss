@@ -1,0 +1,155 @@
+@use './functions' as f;
+
+@keyframes go-up {
+    from {
+        bottom: f.rem(-34);
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+.go-up {
+    animation: go-up 300ms ease-in-out forwards;
+}
+
+@keyframes go-down {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: f.rem(-34);
+    }
+}
+
+.go-down {
+    animation: go-down 300ms ease-in-out forwards;
+}
+
+@keyframes rotate-arrow-down {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.rotate-arrow-down {
+    animation: rotate-arrow-down 300ms ease-in-out forwards;
+}
+
+@keyframes rotate-arrow-up {
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.rotate-arrow-up {
+    animation: rotate-arrow-up 300ms ease-in-out forwards;
+}
+
+@keyframes image-slide-right-outside {
+    from {
+        left: f.rem(0);
+    }
+
+    to {
+        left: calc(100% + f.rem(300));
+    }
+}
+
+.image-slide-right-outside {
+    animation: image-slide-right-outside 300ms ease-in-out forwards;
+}
+
+@keyframes image-slide-left-inside {
+    from {
+        left: calc(100% + f.rem(300));
+    }
+
+    to {
+        left: f.rem(0);
+    }
+}
+
+.image-slide-left-inside {
+    animation: image-slide-left-inside 300ms ease-in-out forwards;
+}
+
+@keyframes text-slide-left-outside {
+    0% {
+        right: f.rem(0);
+        line-height: f.rem(24);
+    }
+
+    50% {
+        right: f.rem(0);
+        line-height: f.rem(0);
+    }
+
+    100% {
+        right: calc(100% + f.rem(300));
+        line-height: f.rem(0);
+    }
+}
+
+.text-slide-left-outside {
+    animation: text-slide-left-outside 500ms ease-in-out forwards;
+}
+
+@keyframes text-slide-right-inside {
+    0% {
+        right: calc(100% + f.rem(300));
+        line-height: f.rem(0);
+    }
+
+    50% {
+        right: f.rem(0);
+        line-height: f.rem(0);
+    }
+
+    100% {
+        right: f.rem(0);
+        line-height: f.rem(24);
+    }
+}
+
+.text-slide-right-inside {
+    animation: text-slide-right-inside 500ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fade-out 150ms ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 500ms ease-in-out forwards;
+}

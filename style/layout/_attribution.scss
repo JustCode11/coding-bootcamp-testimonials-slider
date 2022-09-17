@@ -1,0 +1,35 @@
+@use '../utils/' as u;
+
+.attribution {
+    font-size: u.rem(11);
+    position: absolute;
+    bottom: u.rem(-34);
+    left: 5%;
+    overflow: hidden;
+
+    button {
+        background-color: rgb(39, 39, 39);
+        border: none;
+        margin-left: u.rem(35);
+        border-top-left-radius: u.rem(15);
+        border-top-right-radius: u.rem(15);
+        cursor: pointer;
+
+        img {
+            width: u.rem(35);
+            height: u.rem(30);
+        }
+    }
+
+    &__text {
+        color: white;
+        background-color: rgb(39, 39, 39);
+        padding: u.rem(10) u.rem(15);
+        border-top-left-radius: u.rem(15);
+        border-top-right-radius: u.rem(15);
+
+        &__link {
+            color: hsl(64, 92%, 76%);
+        }
+    }
+}

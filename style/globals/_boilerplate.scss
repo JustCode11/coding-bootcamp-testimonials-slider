@@ -1,0 +1,49 @@
+@use '../utils/' as u;
+@use './fonts' as font;
+@use './colors' as color;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: u.rem(32);
+    font-family: font.$primaryFont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: color.$darkBlue;
+    background-image: url('../images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 80% 8%;
+
+    @include u.breakpoint-down(medium) {
+        font-size: u.rem(18);
+    }
+
+    @include u.breakpoint-up(large) {
+        background-size: 40% 16%;
+    }
+}
+
+p {
+    margin: 0;
+}
